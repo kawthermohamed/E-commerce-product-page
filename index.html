@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="left-side">
+          <div class="logo"><img src="images/logo.svg" alt="" /></div>
+          <div class="mob-icons">
+            <img class="bar-icon" src="images/icon-menu.svg" alt="" />
+            <img class="close-icon" src="images/icon-close.svg" alt="" />
+          </div>
+          <div class="nav">
+            <!-- <img src="images/icon-menu.svg" alt="" /> -->
+            <ul>
+              <li><a href="#">Collections</a></li>
+
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mob-logo"><img src="images/logo.svg" alt="" /></div>
+        </div>
+        <div class="cart-pp">
+          <div class="cart">
+            <img src="images/icon-cart.svg" alt="" />
+            <span class="notify">1</span>
+          </div>
+          <div class="pp"><img src="images/image-avatar.png" alt="" /></div>
+          <div class="cart-box">
+            <span class="title">cart</span>
+            <div class="empty">Your cart is Empty</div>
+            <div class="products"></div>
+            <button class="checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main-page">
+      <div class="container">
+        <div class="photos-sec">
+          <div class="main-photo">
+            <img class="active pro1" src="images/image-product-1.jpg" alt="" />
+            <img class="pro2" src="images/image-product-2.jpg" alt="" />
+            <img class="pro3" src="images/image-product-3.jpg" alt="" />
+            <img class="pro4" src="images/image-product-4.jpg" alt="" />
+          </div>
+          <div class="photos">
+            <img
+              class="active"
+              data-pro="pro1"
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              data-pro="pro2"
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              data-pro="pro3"
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              data-pro="pro4"
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="text-sec">
+          <span class="title">Sneaker Company</span>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="sale">
+              <span class="sale-price"> </span>
+              <span class="sale-percentage" data-percentage="50"></span>
+            </div>
+            <div class="original-price">&dollar;250.00</div>
+          </div>
+          <div class="cart-sec">
+            <div class="item-No">
+              <img class="plus" src="images/icon-minus.svg" alt="" />
+              <span class="No">0</span>
+              <img class="minus" src="images/icon-plus.svg" alt="" />
+            </div>
+            <button class="cart-btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="img-overlay">
+      <img class="open-img" src="images/image-product-1.jpg" alt="" />
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">kawther mohamed</a>.
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
